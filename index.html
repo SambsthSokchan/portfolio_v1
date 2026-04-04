@@ -19,10 +19,10 @@
     <div class="nav-logo">SBSC</div>
     <div class="nav-right">
       <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about" data-magnetic>About</a></li>
+        <li><a href="#skills" data-magnetic>Skills</a></li>
+        <li><a href="#projects" data-magnetic>Projects</a></li>
+        <li><a href="#contact" data-magnetic>Contact</a></li>
       </ul>
       <div class="theme-toggle" id="themeToggle" title="Toggle theme">
         <span class="toggle-icon">&#127769;</span>
@@ -40,12 +40,12 @@
   <div class="hero-inner">
     <div class="hero-content">
       <p class="hero-tag">// Available for opportunities</p>
-      <h1 class="hero-name">Sambath <em>Sokchan</em></h1>
-      <p class="hero-title">Full Stack Developer</p>
+      <h1 class="hero-name split-text">Sambath <em>Sokchan</em></h1>
+      <p class="hero-title split-text">Full Stack Developer</p>
       <p class="hero-desc">I craft digital products that sit at the intersection of clean code and thoughtful design — building scalable systems and beautiful interfaces, end to end.</p>
       <div class="hero-cta">
-        <a href="#projects" class="btn-primary">View My Work &#8594;</a>
-        <a href="#contact" class="btn-outline">Get In Touch</a>
+        <a href="#projects" class="btn-primary" data-magnetic>View My Work &#8594;</a>
+        <a href="#contact" class="btn-outline" data-magnetic>Get In Touch</a>
       </div>
     </div>
     <div class="hero-image-wrap reveal" style="transition-delay:1.2s">
@@ -64,7 +64,7 @@
     <div class="section-label">// 01 — About</div>
     <div class="about-grid">
       <div class="about-text reveal">
-        <h2 class="section-title">Who I<br><em style="font-style:italic;color:var(--accent)">Am</em></h2>
+        <h2 class="section-title split-text">Who I<br><em style="font-style:italic;color:var(--accent)">Am</em></h2>
         <p>I'm a <strong>Full Stack Developer</strong> with a passion for turning complex problems into elegant, efficient solutions. I work across the entire stack — from architecting databases to polishing pixel-perfect UIs.</p>
         <p>My approach blends engineering rigor with creative thinking. I believe great software isn't just functional — it should be a pleasure to use and a joy to maintain.</p>
         <p>When I'm not coding, I'm exploring new technologies, contributing to open source, or sketching out side projects that push the boundaries of what's possible.</p>
@@ -83,42 +83,83 @@
 <section id="skills">
   <div class="container">
     <div class="section-label">// 02 — Skills</div>
-    <h2 class="section-title reveal">My<br>Toolkit</h2>
-    <div class="skills-grid">
-      <div class="skill-group reveal">
-        <div class="skill-group-icon">&#9889;</div>
-        <div class="skill-group-title">Frontend</div>
-        <div class="skill-tags">
-          <span class="skill-tag">React</span><span class="skill-tag">Next.js</span>
-          <span class="skill-tag">TypeScript</span><span class="skill-tag">Vue.js</span>
-          <span class="skill-tag">Tailwind CSS</span><span class="skill-tag">HTML/CSS</span>
+    <h2 class="section-title reveal split-text">My<br>Toolkit</h2>
+    <div class="skills-marquee">
+      <div class="skills-track">
+        <!-- Original set -->
+        <div class="skill-group">
+          <div class="skill-group-icon">&#9889;</div>
+          <div class="skill-group-title">Frontend</div>
+          <div class="skill-tags">
+            <span class="skill-tag">React</span><span class="skill-tag">Next.js</span>
+            <span class="skill-tag">TypeScript</span><span class="skill-tag">Vue.js</span>
+            <span class="skill-tag">Tailwind CSS</span><span class="skill-tag">HTML/CSS</span>
+          </div>
         </div>
-      </div>
-      <div class="skill-group reveal" style="transition-delay:.1s">
-        <div class="skill-group-icon">&#128296;</div>
-        <div class="skill-group-title">Backend</div>
-        <div class="skill-tags">
-          <span class="skill-tag">Node.js</span><span class="skill-tag">Python</span>
-          <span class="skill-tag">Express</span><span class="skill-tag">FastAPI</span>
-          <span class="skill-tag">REST APIs</span><span class="skill-tag">GraphQL</span>
+        <div class="skill-group">
+          <div class="skill-group-icon">&#128296;</div>
+          <div class="skill-group-title">Backend</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Node.js</span><span class="skill-tag">Python</span>
+            <span class="skill-tag">Express</span><span class="skill-tag">FastAPI</span>
+            <span class="skill-tag">REST APIs</span><span class="skill-tag">GraphQL</span>
+          </div>
         </div>
-      </div>
-      <div class="skill-group reveal" style="transition-delay:.2s">
-        <div class="skill-group-icon">&#128452;</div>
-        <div class="skill-group-title">Database &amp; Cloud</div>
-        <div class="skill-tags">
-          <span class="skill-tag">PostgreSQL</span><span class="skill-tag">MongoDB</span>
-          <span class="skill-tag">Redis</span><span class="skill-tag">AWS</span>
-          <span class="skill-tag">Docker</span><span class="skill-tag">Supabase</span>
+        <div class="skill-group">
+          <div class="skill-group-icon">&#128452;</div>
+          <div class="skill-group-title">Database &amp; Cloud</div>
+          <div class="skill-tags">
+            <span class="skill-tag">PostgreSQL</span><span class="skill-tag">MongoDB</span>
+            <span class="skill-tag">Redis</span><span class="skill-tag">AWS</span>
+            <span class="skill-tag">Docker</span><span class="skill-tag">Supabase</span>
+          </div>
         </div>
-      </div>
-      <div class="skill-group reveal" style="transition-delay:.3s">
-        <div class="skill-group-icon">&#128295;</div>
-        <div class="skill-group-title">Tools &amp; Workflow</div>
-        <div class="skill-tags">
-          <span class="skill-tag">Git</span><span class="skill-tag">CI/CD</span>
-          <span class="skill-tag">Linux</span><span class="skill-tag">Figma</span>
-          <span class="skill-tag">Jest</span><span class="skill-tag">Agile</span>
+        <div class="skill-group">
+          <div class="skill-group-icon">&#128295;</div>
+          <div class="skill-group-title">Tools &amp; Workflow</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Git</span><span class="skill-tag">CI/CD</span>
+            <span class="skill-tag">Linux</span><span class="skill-tag">Figma</span>
+            <span class="skill-tag">Jest</span><span class="skill-tag">Agile</span>
+          </div>
+        </div>
+        
+        <!-- Duplicated set for seamless loop -->
+        <div class="skill-group">
+          <div class="skill-group-icon">&#9889;</div>
+          <div class="skill-group-title">Frontend</div>
+          <div class="skill-tags">
+            <span class="skill-tag">React</span><span class="skill-tag">Next.js</span>
+            <span class="skill-tag">TypeScript</span><span class="skill-tag">Vue.js</span>
+            <span class="skill-tag">Tailwind CSS</span><span class="skill-tag">HTML/CSS</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-icon">&#128296;</div>
+          <div class="skill-group-title">Backend</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Node.js</span><span class="skill-tag">Python</span>
+            <span class="skill-tag">Express</span><span class="skill-tag">FastAPI</span>
+            <span class="skill-tag">REST APIs</span><span class="skill-tag">GraphQL</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-icon">&#128452;</div>
+          <div class="skill-group-title">Database &amp; Cloud</div>
+          <div class="skill-tags">
+            <span class="skill-tag">PostgreSQL</span><span class="skill-tag">MongoDB</span>
+            <span class="skill-tag">Redis</span><span class="skill-tag">AWS</span>
+            <span class="skill-tag">Docker</span><span class="skill-tag">Supabase</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-icon">&#128295;</div>
+          <div class="skill-group-title">Tools &amp; Workflow</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Git</span><span class="skill-tag">CI/CD</span>
+            <span class="skill-tag">Linux</span><span class="skill-tag">Figma</span>
+            <span class="skill-tag">Jest</span><span class="skill-tag">Agile</span>
+          </div>
         </div>
       </div>
     </div>
@@ -129,7 +170,7 @@
 <section id="projects">
   <div class="container">
     <div class="section-label">// 03 — Projects</div>
-    <h2 class="section-title reveal">Selected<br>Work</h2>
+    <h2 class="section-title reveal split-text">Selected<br>Work</h2>
     <div class="projects-grid">
       <div class="project-card reveal">
         <div class="project-header">
@@ -144,7 +185,7 @@
             <span class="project-tech">PostgreSQL</span>
             <span class="project-tech">WebSockets</span>
           </div>
-          <a href="#" class="project-link">View &#8594;</a>
+          <a href="#" class="project-link" data-magnetic>View &#8594;</a>
         </div>
       </div>
       <div class="project-card reveal" style="transition-delay:.15s">
@@ -160,7 +201,7 @@
             <span class="project-tech">Redis</span>
             <span class="project-tech">Docker</span>
           </div>
-          <a href="#" class="project-link">View &#8594;</a>
+          <a href="#" class="project-link" data-magnetic>View &#8594;</a>
         </div>
       </div>
       <div class="project-card reveal" style="transition-delay:.3s">
@@ -176,7 +217,7 @@
             <span class="project-tech">Python</span>
             <span class="project-tech">Stripe</span>
           </div>
-          <a href="#" class="project-link">View &#8594;</a>
+          <a href="#" class="project-link" data-magnetic>View &#8594;</a>
         </div>
       </div>
     </div>
@@ -188,20 +229,20 @@
   <div class="container">
     <div class="section-label">// 04 — Contact</div>
     <div class="contact-inner">
-      <h2 class="contact-heading reveal">Let's build<br>something <em>great.</em></h2>
+      <h2 class="contact-heading split-text">Let's build<br>something <em>great.</em></h2>
       <p class="contact-sub reveal">Whether it's a project, a role, or just a conversation about tech — my inbox is always open.</p>
       <div class="contact-links">
-        <a href="mailto:hello@yourname.com" class="contact-link reveal">
+        <a href="mailto:hello@yourname.com" class="contact-link reveal" data-magnetic>
           <span class="contact-link-icon">Email</span>
           <span class="contact-link-label">hello@yourname.com</span>
           <span class="contact-link-arrow">&#8594;</span>
         </a>
-        <a href="https://github.com/" target="_blank" class="contact-link reveal" style="transition-delay:.1s">
+        <a href="https://github.com/" target="_blank" class="contact-link reveal" style="transition-delay:.1s" data-magnetic>
           <span class="contact-link-icon">GitHub</span>
           <span class="contact-link-label">github.com/yourname</span>
           <span class="contact-link-arrow">&#8594;</span>
         </a>
-        <a href="https://linkedin.com/" target="_blank" class="contact-link reveal" style="transition-delay:.2s">
+        <a href="https://linkedin.com/" target="_blank" class="contact-link reveal" style="transition-delay:.2s" data-magnetic>
           <span class="contact-link-icon">LinkedIn</span>
           <span class="contact-link-label">linkedin.com/in/yourname</span>
           <span class="contact-link-arrow">&#8594;</span>
@@ -219,10 +260,10 @@
       <div class="footer-logo">YN.</div>
       <p class="footer-tagline">Building digital products with clean code and thoughtful design — end to end.</p>
       <div class="footer-social">
-        <a href="https://github.com/" target="_blank" class="footer-social-link" title="GitHub">GH</a>
-        <a href="https://linkedin.com/" target="_blank" class="footer-social-link" title="LinkedIn">LI</a>
-        <a href="https://twitter.com/" target="_blank" class="footer-social-link" title="Twitter">X</a>
-        <a href="mailto:hello@yourname.com" class="footer-social-link" title="Email">@</a>
+        <a href="https://github.com/" target="_blank" class="footer-social-link" title="GitHub" data-magnetic>GH</a>
+        <a href="https://linkedin.com/" target="_blank" class="footer-social-link" title="LinkedIn" data-magnetic>LI</a>
+        <a href="https://twitter.com/" target="_blank" class="footer-social-link" title="Twitter" data-magnetic>X</a>
+        <a href="mailto:hello@yourname.com" class="footer-social-link" title="Email" data-magnetic>@</a>
       </div>
     </div>
     <div class="footer-col">
@@ -269,6 +310,7 @@
     </div>
   </div>
 </footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
