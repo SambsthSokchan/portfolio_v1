@@ -15,7 +15,10 @@
 
 <nav>
   <div class="container nav-inner">
-    <div class="nav-logo">SBSC</div>
+    <a href="../index.html" class="nav-logo">
+      <img src="../Logo.png" alt="SBSC Programming" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+      <span style="display:none">SBSC</span>
+    </a>
     <div class="nav-right">
       <ul class="nav-links">
         <li><a href="../index.html#skills" data-magnetic>Back to Skills</a></li>
@@ -40,12 +43,15 @@
       <p class="hero-desc reveal" style="margin: 2rem auto; max-width: 600px;">Architecting scalable, secure, and high-performance server-side applications. Building robust APIs and microservices handling millions of requests with optimal efficiency.</p>
       
       <div class="project-stack reveal" style="justify-content: center; margin-bottom: 3rem;">
+        <span class="project-tech">Java</span>
+        <span class="project-tech">JavaScript</span>
+        <span class="project-tech">PHP</span>
+        <span class="project-tech">C#</span>
+        <span class="project-tech">C++</span>
         <span class="project-tech">Node.js</span>
-        <span class="project-tech">Python</span>
         <span class="project-tech">Express</span>
         <span class="project-tech">FastAPI</span>
-        <span class="project-tech">REST APIs</span>
-        <span class="project-tech">GraphQL</span>
+        <span class="project-tech">REST API</span>
       </div>
       
       <div class="hero-cta reveal" style="justify-content: center;">
@@ -55,11 +61,68 @@
   </div>
 </section>
 
+<section id="tech-details" style="padding-top: 0; padding-bottom: 6rem;">
+  <div class="container" style="max-width: 800px; margin: 0 auto;">
+    <h2 class="section-title" style="font-size: clamp(1.5rem, 3vw, 2.5rem); margin-bottom: 2rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">Understanding Backend Technologies</h2>
+
+    <div class="reveal" style="margin-bottom: 4rem;">
+      <h3 style="font-family: 'Playfair Display', serif; font-size: 1.8rem; margin-bottom: 1rem;">Java & C#: Enterprise Powerhouses</h3>
+      <p style="color: var(--muted); line-height: 1.9; font-size: 1rem; margin-bottom: 1.5rem;">
+        <strong style="color: var(--text); font-weight: 500;">Java</strong> and <strong style="color: var(--text); font-weight: 500;">C#</strong> are strongly-typed, object-oriented languages renowned for their performance, security, and scalability. They are heavily relied upon in large-scale enterprise environments, banking systems, and complex architectures where stability and memory management are critical over decades of operation.
+      </p>
+    </div>
+
+    <div class="reveal" style="margin-top: 4rem;">
+      <h3 style="font-family: 'Playfair Display', serif; font-size: 1.8rem; margin-bottom: 1rem;">C++: Ultimate Performance</h3>
+      <p style="color: var(--muted); line-height: 1.9; font-size: 1rem; margin-bottom: 1.5rem;">
+        <strong style="color: var(--text); font-weight: 500;">C++</strong> offers unparalleled control over system resources. It is typically used for performance-critical applications like game engines, real-time trading systems, hardware drivers, and embedded systems where every microsecond and byte of memory matters.
+      </p>
+    </div>
+
+    <div class="reveal" style="margin-top: 4rem;">
+      <h3 style="font-family: 'Playfair Display', serif; font-size: 1.8rem; margin-bottom: 1rem;">PHP: Web-Native Processing</h3>
+      <p style="color: var(--muted); line-height: 1.9; font-size: 1rem; margin-bottom: 1.5rem;">
+        <strong style="color: var(--text); font-weight: 500;">PHP</strong> is a server-side scripting language deeply embedded into the fabric of the web. It famously powers platforms like WordPress and boasts an massive ecosystem for rapidly building database-driven applications and content management systems.
+      </p>
+    </div>
+
+    <div class="reveal" style="margin-top: 4rem;">
+      <h3 style="font-family: 'Playfair Display', serif; font-size: 1.8rem; margin-bottom: 1rem;">JavaScript & Node.js: Full-Stack Synergy</h3>
+      <p style="color: var(--muted); line-height: 1.9; font-size: 1rem; margin-bottom: 1.5rem;">
+        Moving <strong style="color: var(--text); font-weight: 500;">JavaScript</strong> from the browser to the server became possible with <strong style="color: var(--text); font-weight: 500;">Node.js</strong>. Node.js is an asynchronous runtime environment that allows developers to write extremely fast, scalable network applications, meaning the entire stack—frontend and backend—can be written in one single language.
+      </p>
+    </div>
+
+    <div class="reveal" style="margin-top: 4rem;">
+      <h3 style="font-family: 'Playfair Display', serif; font-size: 1.8rem; margin-bottom: 1rem;">Express & FastAPI: Rapid Routing</h3>
+      <h4 style="font-family: 'DM Mono', monospace; font-size: 0.85rem; letter-spacing: 0.1em; color: var(--accent); margin-top: 2rem; margin-bottom: 0.5rem; text-transform: uppercase;">Express.js</h4>
+      <p style="color: var(--muted); line-height: 1.9; font-size: 1rem; margin-bottom: 1.5rem;">
+        <strong style="color: var(--text); font-weight: 500;">Express</strong> is the standard minimal and flexible web application framework for Node.js. It simplifies writing server logic, setting up web routes, and creating APIs incredibly fast.
+      </p>
+      
+      <h4 style="font-family: 'DM Mono', monospace; font-size: 0.85rem; letter-spacing: 0.1em; color: var(--accent); margin-top: 2rem; margin-bottom: 0.5rem; text-transform: uppercase;">FastAPI</h4>
+      <p style="color: var(--muted); line-height: 1.9; font-size: 1rem; margin-bottom: 1.5rem;">
+        <strong style="color: var(--text); font-weight: 500;">FastAPI</strong> is a modern, high-performance web framework for building APIs. It automatically validates data, generates documentation, and runs incredibly fast.
+      </p>
+    </div>
+
+    <div class="reveal" style="margin-top: 4rem;">
+      <h3 style="font-family: 'Playfair Display', serif; font-size: 1.8rem; margin-bottom: 1rem;">REST API: The Communication Standard</h3>
+      <p style="color: var(--muted); line-height: 1.9; font-size: 1rem; margin-bottom: 1.5rem;">
+        A <strong style="color: var(--text); font-weight: 500;">REST API</strong> (Representational State Transfer) is not a language, but an architectural pattern for how two systems connect over the internet. It uses standard HTTP requests like <code style="font-family: 'DM Mono', monospace; color: var(--accent);">GET</code>, <code style="font-family: 'DM Mono', monospace; color: var(--accent);">POST</code>, <code style="font-family: 'DM Mono', monospace; color: var(--accent);">PUT</code>, and <code style="font-family: 'DM Mono', monospace; color: var(--accent);">DELETE</code> to act as a structured bridge between frontend user interfaces and the backend database.
+      </p>
+    </div>
+
+  </div>
+</section>
+
 <footer>
   <div class="footer-top">
     <div class="container footer-top-grid">
       <div class="footer-brand">
-      <div class="footer-logo">SBSC.</div>
+      <div class="footer-logo">
+        <img src="../Logo.png" alt="SBSC" style="height: 40px;" onerror="this.onerror=null; this.src=''; this.alt='SBSC';">
+      </div>
       <p class="footer-tagline">Building digital products with clean code and thoughtful design — end to end.</p>
     </div>
     <div class="footer-col">

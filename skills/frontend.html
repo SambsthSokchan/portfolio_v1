@@ -15,7 +15,10 @@
 
 <nav>
   <div class="container nav-inner">
-    <div class="nav-logo">SBSC</div>
+    <a href="../index.html" class="nav-logo">
+      <img src="../Logo.png" alt="SBSC Programming" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+      <span style="display:none">SBSC</span>
+    </a>
     <div class="nav-right">
       <ul class="nav-links">
         <li><a href="../index.html#skills" data-magnetic>Back to Skills</a></li>
@@ -42,8 +45,8 @@
       <div class="project-stack reveal" style="justify-content: center; margin-bottom: 3rem;">
         <span class="project-tech">React</span>
         <span class="project-tech">Next.js</span>
-        <span class="project-tech">TypeScript</span>
-        <span class="project-tech">Vue.js</span>
+        <span class="project-tech">JavaScript</span>
+        <span class="project-tech">Bootstrap</span>
         <span class="project-tech">Tailwind CSS</span>
         <span class="project-tech">HTML/CSS</span>
       </div>
@@ -55,11 +58,77 @@
   </div>
 </section>
 
+<section id="tech-details" style="padding-top: 0; padding-bottom: 6rem;">
+  <div class="container" style="max-width: 800px; margin: 0 auto;">
+    <h2 class="section-title" style="font-size: clamp(1.5rem, 3vw, 2.5rem); margin-bottom: 2rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">Understanding the Core Technologies</h2>
+    
+    <div style="margin-bottom: 4rem;" class="reveal">
+      <h3 style="font-family: 'Playfair Display', serif; font-size: 1.8rem; margin-bottom: 1rem;">HTML & CSS: The Foundation of the Web</h3>
+      <p style="color: var(--muted); line-height: 1.9; font-size: 1rem; margin-bottom: 1.5rem;">
+        Every website on the internet is built using HTML and CSS under the hood. They work together but have very distinct jobs.
+      </p>
+      
+      <h4 style="font-family: 'DM Mono', monospace; font-size: 0.85rem; letter-spacing: 0.1em; color: var(--accent); margin-top: 2rem; margin-bottom: 0.5rem; text-transform: uppercase;">HTML (HyperText Markup Language)</h4>
+      <p style="color: var(--muted); line-height: 1.9; font-size: 1rem; margin-bottom: 1.5rem;">
+        HTML is the <strong style="color: var(--text); font-weight: 500;">structure and content</strong> of a web page. It uses tags to label pieces of content so the web browser knows what they are. Think of it as the skeleton or the framing of a house. It defines where the walls, doors, and windows go, but it doesn't decide what color they are.
+      </p>
+      
+      <h4 style="font-family: 'DM Mono', monospace; font-size: 0.85rem; letter-spacing: 0.1em; color: var(--accent); margin-top: 2rem; margin-bottom: 0.5rem; text-transform: uppercase;">CSS (Cascading Style Sheets)</h4>
+      <p style="color: var(--muted); line-height: 1.9; font-size: 1rem; margin-bottom: 1.5rem;">
+        CSS handles the <strong style="color: var(--text); font-weight: 500;">presentation and design</strong> of a web page. It takes the raw HTML structure and makes it look beautiful. It controls colors, fonts, spacing, layout, animations, and how the site looks on different screen sizes. Think of it as the interior design and paint of the house.
+      </p>
+    </div>
+
+    <div class="reveal">
+      <h3 style="font-family: 'Playfair Display', serif; font-size: 1.8rem; margin-bottom: 1rem;">Tailwind CSS: A Modern Approach to Styling</h3>
+      <p style="color: var(--muted); line-height: 1.9; font-size: 1rem; margin-bottom: 1.5rem;">
+        Tailwind CSS is a highly popular <strong style="color: var(--text); font-weight: 500;">"utility-first" CSS framework</strong>. Instead of writing standard CSS in a separate file, Tailwind provides thousands of tiny, pre-made CSS classes that you apply directly to your HTML elements.
+      </p>
+      <ul style="color: var(--muted); line-height: 1.9; font-size: 1rem; margin-bottom: 1.5rem; padding-left: 1.5rem; list-style-type: square;">
+        <li style="margin-bottom: 0.5rem;"><strong style="color: var(--text); font-weight: 500;">Incredible Speed:</strong> Because you aren't constantly switching between your HTML file and your CSS file, you can build interfaces incredibly fast.</li>
+        <li style="margin-bottom: 0.5rem;"><strong style="color: var(--text); font-weight: 500;">Standardized Design System:</strong> Tailwind comes with a pre-configured palette of colors, spacing sizes, and fonts, making it easier to create mathematically proportional and visually pleasing designs out of the box.</li>
+        <li style="margin-bottom: 0.5rem;"><strong style="color: var(--text); font-weight: 500;">No Naming Headaches:</strong> One of the hardest parts of traditional CSS is inventing names for things. With Tailwind, you intuitively describe how it looks using their utility classes.</li>
+        <li style="margin-bottom: 0.5rem;"><strong style="color: var(--text); font-weight: 500;">Smaller File Sizes:</strong> Tailwind has a smart compiler that only bundles the classes you actually used in your final website, making the load time exceptionally fast.</li>
+      </ul>
+    </div>
+
+    <div class="reveal" style="margin-top: 4rem;">
+      <h3 style="font-family: 'Playfair Display', serif; font-size: 1.8rem; margin-bottom: 1rem;">Bootstrap: The Classic Component Framework</h3>
+      <p style="color: var(--muted); line-height: 1.9; font-size: 1rem; margin-bottom: 1.5rem;">
+        Bootstrap is a powerful <strong style="color: var(--text); font-weight: 500;">component-based CSS framework</strong> used to build responsive websites quickly. Unlike Tailwind, which gives you raw utilities, Bootstrap gives you fully styled, out-of-the-box components like navigation bars, buttons, and modals. It uses a robust grid system that makes building mobile-friendly layouts incredibly easy.
+      </p>
+    </div>
+
+    <div class="reveal" style="margin-top: 4rem;">
+      <h3 style="font-family: 'Playfair Display', serif; font-size: 1.8rem; margin-bottom: 1rem;">JavaScript: The Engine of Interactivity</h3>
+      <p style="color: var(--muted); line-height: 1.9; font-size: 1rem; margin-bottom: 1.5rem;">
+        If HTML is the skeleton and CSS is the paint, JavaScript is the <strong style="color: var(--text); font-weight: 500;">muscles and nervous system</strong>. It is a powerful programming language that makes web pages alive and interactive. Whenever a website does more than just sit there and look pretty—like updating a timeline, fetching live data, or playing complex animations—JavaScript is doing the heavy lifting.
+      </p>
+    </div>
+
+    <div class="reveal" style="margin-top: 4rem;">
+      <h3 style="font-family: 'Playfair Display', serif; font-size: 1.8rem; margin-bottom: 1rem;">React.js: Building UIs with Components</h3>
+      <p style="color: var(--muted); line-height: 1.9; font-size: 1rem; margin-bottom: 1.5rem;">
+        Created by Facebook, React.js is a wildly popular <strong style="color: var(--text); font-weight: 500;">JavaScript library for building user interfaces</strong>. Instead of treating a web page as one giant document, React lets you break the UI down into small, reusable pieces called "components" (like a custom VideoPlayer or a LikeButton). It also features a "Virtual DOM" which makes updating the screen incredibly fast when user data changes.
+      </p>
+    </div>
+
+    <div class="reveal" style="margin-top: 4rem;">
+      <h3 style="font-family: 'Playfair Display', serif; font-size: 1.8rem; margin-bottom: 1rem;">Next.js: The Production React Framework</h3>
+      <p style="color: var(--muted); line-height: 1.9; font-size: 1rem; margin-bottom: 1.5rem;">
+        Next.js is a powerful framework built <em>on top</em> of React. While React is great for building interfaces, it requires extra setup for things like routing or loading data securely. Next.js solves this by providing a <strong style="color: var(--text); font-weight: 500;">complete toolkit for production</strong>. It offers features like Server-Side Rendering (SSR) for massive SEO boosts, built-in page routing, and rapid image optimization, making it the industry standard for modern web applications.
+      </p>
+    </div>
+  </div>
+</section>
+
 <footer>
   <div class="footer-top">
     <div class="container footer-top-grid">
       <div class="footer-brand">
-      <div class="footer-logo">SBSC.</div>
+      <div class="footer-logo">
+        <img src="../Logo.png" alt="SBSC" style="height: 40px;" onerror="this.onerror=null; this.src=''; this.alt='SBSC';">
+      </div>
       <p class="footer-tagline">Building digital products with clean code and thoughtful design — end to end.</p>
     </div>
     <div class="footer-col">

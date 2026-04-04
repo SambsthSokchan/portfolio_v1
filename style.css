@@ -9,34 +9,36 @@
 /* DARK */
 :root,
 [data-theme="dark"] {
-  --bg: #0a0a0f;
-  --surface: #111118;
-  --border: #1e1e2e;
-  --accent: #c8f060;
-  --accent2: #f0a060;
-  --text: #e8e8f0;
-  --muted: #6a6a8a;
-  --card: #13131d;
-  --nav-bg: rgba(10, 10, 15, 0.95);
-  --grid-line: rgba(255, 255, 255, 0.02);
-  --hero-num: rgba(255, 255, 255, 0.025);
-  --shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  --bg: #05050a;
+  --surface: #0a0a14;
+  --border: #1a1a2e;
+  --accent: #06b6d4;
+  --accent2: #2563eb;
+  --accent-gradient: linear-gradient(135deg, #2563eb, #06b6d4);
+  --text: #e0e7ff;
+  --muted: #6366f1;
+  --card: #0c0c1a;
+  --nav-bg: rgba(5, 5, 10, 0.95);
+  --grid-line: rgba(99, 102, 241, 0.03);
+  --hero-num: rgba(99, 102, 241, 0.05);
+  --shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
 }
 
 /* LIGHT */
 [data-theme="light"] {
-  --bg: #f5f4ef;
-  --surface: #eceae2;
-  --border: #d8d5c8;
-  --accent: #5a7a00;
-  --accent2: #c0600a;
-  --text: #1a1a14;
-  --muted: #7a7862;
-  --card: #fffef8;
-  --nav-bg: rgba(245, 244, 239, 0.95);
-  --grid-line: rgba(0, 0, 0, 0.04);
-  --hero-num: rgba(0, 0, 0, 0.035);
-  --shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+  --bg: #f8faff;
+  --surface: #edf2ff;
+  --border: #dbe4ff;
+  --accent: #2563eb;
+  --accent2: #06b6d4;
+  --accent-gradient: linear-gradient(135deg, #2563eb, #06b6d4);
+  --text: #1e1b4b;
+  --muted: #4f46e5;
+  --card: #ffffff;
+  --nav-bg: rgba(248, 250, 255, 0.95);
+  --grid-line: rgba(37, 99, 235, 0.05);
+  --hero-num: rgba(37, 99, 235, 0.08);
+  --shadow: 0 8px 32px rgba(30, 27, 75, 0.1);
 }
 
 html {
@@ -121,12 +123,20 @@ nav::before {
 }
 
 .nav-logo {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.3rem;
-  font-weight: 900;
-  letter-spacing: -.02em;
-  color: var(--accent);
-  transition: color .4s;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: transform .3s cubic-bezier(.34, 1.56, .64, 1);
+}
+
+.nav-logo img {
+  height: 50px;
+  width: auto;
+  display: block;
+}
+
+.nav-logo:hover {
+  transform: scale(1.05);
 }
 
 .nav-right {
@@ -881,13 +891,19 @@ footer {
 }
 
 .footer-logo {
-  font-family: 'Playfair Display', serif;
-  font-size: 2rem;
-  font-weight: 900;
-  letter-spacing: -.03em;
-  color: var(--accent);
-  margin-bottom: 1rem;
-  transition: color .4s;
+  margin-bottom: 1.5rem;
+  transition: transform .3s ease;
+  display: inline-block;
+}
+
+.footer-logo img {
+  height: 50px;
+  width: auto;
+  display: block;
+}
+
+.footer-logo:hover {
+  transform: translateY(-2px);
 }
 
 .footer-tagline {

@@ -15,7 +15,10 @@
 
 <nav>
   <div class="container nav-inner">
-    <div class="nav-logo">SBSC</div>
+    <a href="../index.html" class="nav-logo">
+      <img src="../Logo.png" alt="SBSC Programming" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+      <span style="display:none">SBSC</span>
+    </a>
     <div class="nav-right">
       <ul class="nav-links">
         <li><a href="../index.html#skills" data-magnetic>Back to Skills</a></li>
@@ -38,14 +41,15 @@
       <div class="skill-group-icon reveal" style="font-size: 3rem; margin-bottom: 1rem;">&#128452;</div>
       <h1 class="hero-name split-text" style="font-size: clamp(2.5rem, 5vw, 4rem);">Database &amp; <em>Cloud</em></h1>
       <p class="hero-desc reveal" style="margin: 2rem auto; max-width: 600px;">Designing reliable and optimized data persistence layers. Proficient in managing cloud infrastructure and ensuring dynamic scalability using containerization.</p>
-      
       <div class="project-stack reveal" style="justify-content: center; margin-bottom: 3rem;">
         <span class="project-tech">PostgreSQL</span>
+        <span class="project-tech">MySQL</span>
+        <span class="project-tech">XAMPP</span>
+        <span class="project-tech">SSMS</span>
+        <span class="project-tech">SQLite</span>
         <span class="project-tech">MongoDB</span>
-        <span class="project-tech">Redis</span>
         <span class="project-tech">AWS</span>
         <span class="project-tech">Docker</span>
-        <span class="project-tech">Supabase</span>
       </div>
       
       <div class="hero-cta reveal" style="justify-content: center;">
@@ -55,11 +59,66 @@
   </div>
 </section>
 
+<section id="tech-details" style="padding-top: 0; padding-bottom: 6rem;">
+  <div class="container" style="max-width: 800px; margin: 0 auto;">
+    <h2 class="section-title" style="font-size: clamp(1.5rem, 3vw, 2.5rem); margin-bottom: 2rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">Understanding Database & Cloud Technologies</h2>
+
+    <div class="reveal" style="margin-bottom: 4rem;">
+      <h3 style="font-family: 'Playfair Display', serif; font-size: 1.8rem; margin-bottom: 1rem;">SQL Databases: Standardized Relational Storage</h3>
+      <h4 style="font-family: 'DM Mono', monospace; font-size: 0.85rem; letter-spacing: 0.1em; color: var(--accent); margin-top: 2rem; margin-bottom: 0.5rem; text-transform: uppercase;">PostgreSQL & MySQL</h4>
+      <p style="color: var(--muted); line-height: 1.9; font-size: 1rem; margin-bottom: 1.5rem;">
+        <strong style="color: var(--text); font-weight: 500;">PostgreSQL</strong> and <strong style="color: var(--text); font-weight: 500;">MySQL</strong> are the world's most popular open-source relational database management systems. They store data in highly structured tables (like advanced spreadsheets) with strict rules defining how different arrays of data connect to each other.
+      </p>
+
+      <h4 style="font-family: 'DM Mono', monospace; font-size: 0.85rem; letter-spacing: 0.1em; color: var(--accent); margin-top: 2rem; margin-bottom: 0.5rem; text-transform: uppercase;">SQLite</h4>
+      <p style="color: var(--muted); line-height: 1.9; font-size: 1rem; margin-bottom: 1.5rem;">
+        <strong style="color: var(--text); font-weight: 500;">SQLite</strong> is a C-language library that implements a small, fast, self-contained, high-reliability SQL database engine. Instead of running on a heavy server connection, it runs directly inside a unified application file, making it perfect for local testing or mobile apps.
+      </p>
+    </div>
+
+    <div class="reveal" style="margin-top: 4rem;">
+      <h3 style="font-family: 'Playfair Display', serif; font-size: 1.8rem; margin-bottom: 1rem;">NoSQL: Flexible Document Storage</h3>
+      <p style="color: var(--muted); line-height: 1.9; font-size: 1rem; margin-bottom: 1.5rem;">
+        <strong style="color: var(--text); font-weight: 500;">MongoDB</strong> is a leading NoSQL database. Instead of structured tables, it stores data in flexible, JSON-like documents. Because fields can vary from document to document, MongoDB is highly advantageous for rapidly evolving projects where the data structure isn't completely finalized.
+      </p>
+    </div>
+
+    <div class="reveal" style="margin-top: 4rem;">
+      <h3 style="font-family: 'Playfair Display', serif; font-size: 1.8rem; margin-bottom: 1rem;">Tooling & Environments</h3>
+      <h4 style="font-family: 'DM Mono', monospace; font-size: 0.85rem; letter-spacing: 0.1em; color: var(--accent); margin-top: 2rem; margin-bottom: 0.5rem; text-transform: uppercase;">XAMPP</h4>
+      <p style="color: var(--muted); line-height: 1.9; font-size: 1rem; margin-bottom: 1.5rem;">
+        <strong style="color: var(--text); font-weight: 500;">XAMPP</strong> is an easy-to-install local server environment containing Apache, MariaDB/MySQL, and PHP. It's the classic, hassle-free way to simulate a real web server on your personal computer for testing before going live.
+      </p>
+
+      <h4 style="font-family: 'DM Mono', monospace; font-size: 0.85rem; letter-spacing: 0.1em; color: var(--accent); margin-top: 2rem; margin-bottom: 0.5rem; text-transform: uppercase;">SSMS</h4>
+      <p style="color: var(--muted); line-height: 1.9; font-size: 1rem; margin-bottom: 1.5rem;">
+        <strong style="color: var(--text); font-weight: 500;">SSMS</strong> (SQL Server Management Studio) is a powerful graphical interface provided by Microsoft for configuring, managing, and administering components of Microsoft SQL Server. It allows developers to visually build and manage databases instead of relying purely on a raw command line.
+      </p>
+    </div>
+
+    <div class="reveal" style="margin-top: 4rem;">
+      <h3 style="font-family: 'Playfair Display', serif; font-size: 1.8rem; margin-bottom: 1rem;">Cloud & Containerization</h3>
+      <h4 style="font-family: 'DM Mono', monospace; font-size: 0.85rem; letter-spacing: 0.1em; color: var(--accent); margin-top: 2rem; margin-bottom: 0.5rem; text-transform: uppercase;">AWS (Amazon Web Services)</h4>
+      <p style="color: var(--muted); line-height: 1.9; font-size: 1rem; margin-bottom: 1.5rem;">
+        <strong style="color: var(--text); font-weight: 500;">AWS</strong> is the world's most comprehensive cloud platform. Instead of buying physical hardware, you rent incredibly powerful servers, databases, and network architecture on-demand from Amazon's global data centers to scale your applications infinitely.
+      </p>
+
+      <h4 style="font-family: 'DM Mono', monospace; font-size: 0.85rem; letter-spacing: 0.1em; color: var(--accent); margin-top: 2rem; margin-bottom: 0.5rem; text-transform: uppercase;">Docker</h4>
+      <p style="color: var(--muted); line-height: 1.9; font-size: 1rem; margin-bottom: 1.5rem;">
+        <strong style="color: var(--text); font-weight: 500;">Docker</strong> allows you to package an application alongside all of its dependencies into a single digital "container". This completely eliminates the "it works on my machine" problem, guaranteeing that your application will run identically whether executing on your laptop or deep inside the server farms on AWS.
+      </p>
+    </div>
+
+  </div>
+</section>
+
 <footer>
   <div class="footer-top">
     <div class="container footer-top-grid">
       <div class="footer-brand">
-      <div class="footer-logo">SBSC.</div>
+      <div class="footer-logo">
+        <img src="../Logo.png" alt="SBSC" style="height: 40px;" onerror="this.onerror=null; this.src=''; this.alt='SBSC';">
+      </div>
       <p class="footer-tagline">Building digital products with clean code and thoughtful design — end to end.</p>
     </div>
     <div class="footer-col">
