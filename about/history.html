@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>My Journey — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="../style.css?v=3"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- NAV -->
+<nav>
+  <div class="container nav-inner">
+    <a href="../index.html" class="nav-logo">
+      <img src="../Logo.png" alt="SBSC Programming" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+      <span style="display:none">SBSC</span>
+    </a>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="../index.html#about" data-magnetic>About</a></li>
+        <li><a href="../index.html#projects" data-magnetic>Projects</a></li>
+        <li><a href="../index.html#contact" data-magnetic>Contact</a></li>
+      </ul>
+      <div class="theme-toggle" id="themeToggle" title="Toggle theme">
+        <span class="toggle-icon">&#127769;</span>
+        <div class="toggle-switch"></div>
+        <span class="toggle-icon">&#9728;&#65039;</span>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="history-hero">
+  <div class="history-hero-image">
+    <img src="hero.png" alt="Journey Background">
+  </div>
+  <div class="history-hero-overlay"></div>
+  <div class="container">
+    <div class="history-hero-content">
+      <p class="hero-tag reveal">// Evolution of Career</p>
+      <h1 class="hero-name split-text">My <em>Journey</em></h1>
+      <p class="hero-desc reveal" style="margin: 2rem auto; max-width: 600px;">A chronicle of growth, learning, and the relentless pursuit of engineering excellence. From my first line of code to building large-scale digital products.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TIMELINE -->
+<section class="history-timeline">
+  <div class="container">
+    
+    <div class="history-item">
+      <div class="history-text reveal">
+        <div class="history-meta">2021 — 2023</div>
+        <h2 class="history-title">The Foundation</h2>
+        <p class="history-desc">Every great structure begins with a solid foundation. These years were dedicated to mastering the core technologies of the web—deep diving into HTML semantic structures, CSS architecture, and the intricacies of modern JavaScript.</p>
+        <p class="history-desc">I focused on understanding project lifecycles and the importance of professional workflows, setting the stage for more complex engineering challenges.</p>
+      </div>
+      <div class="history-visual reveal" style="transition-delay: .2s">
+        <img src="milestone.png" alt="Early Career Milestone">
+      </div>
+    </div>
+
+    <div class="history-item">
+      <div class="history-text reveal">
+        <div class="history-meta">2024 — Present</div>
+        <h2 class="history-title">Full Stack Evolution</h2>
+        <p class="history-desc">Moving beyond the frontend, I expanded my expertise into server-side development, database architecture, and cloud infrastructure. This evolution allowed me to think of products as holistic experiences, not just as visual layers.</p>
+        <p class="history-desc">Today, I build scalable systems using Next.js, Node.js, and PostgreSQL, focusing on performance, security, and developer experience.</p>
+      </div>
+      <div class="history-visual reveal" style="transition-delay: .2s">
+        <!-- Reusing same milestone image for consistency in this demo, or I could generate more -->
+        <img src="milestone.png" alt="Advanced Engineering Milestone">
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT CTA -->
+<section id="contact" style="background: var(--surface); text-align: center;">
+  <div class="container">
+    <h2 class="section-title reveal">Want to hear<br>more?</h2>
+    <div class="hero-cta reveal" style="justify-content: center; margin-top: 2rem;">
+      <a href="../index.html#contact" class="btn-primary" data-magnetic>Let's Talk &#8594;</a>
+      <a href="../index.html" class="btn-outline" data-magnetic>Back Home</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-bottom">
+    <div class="container footer-bottom-inner">
+      <span class="footer-copy">&copy; 2026 Sambath Sokchan &mdash; All rights reserved</span>
+      <a href="../index.html" class="footer-back-top">&#8592; Back Home</a>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+<script src="../script.js"></script>
+</body>
+</html>
